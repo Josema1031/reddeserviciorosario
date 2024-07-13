@@ -1,0 +1,66 @@
+header {
+    background-image: linear-gradient(to left, #017F2A, #A9D300);
+    color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid white;
+    margin: 2px;
+    margin-bottom: 10px;
+    padding: 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 2px;
+}
+
+.menu a {
+
+    color: white;
+    font-size: 15px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+a:hover {
+    color: yellow;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    left: 10px;
+    background-image: linear-gradient(to left, #017F2A, #A9D300);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+.submenu a {
+    font-size: small;
+    padding: 1px;
+    display: block;
+}

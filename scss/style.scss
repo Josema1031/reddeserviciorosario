@@ -1,0 +1,51 @@
+@import "header.scss";
+@import "footer.scss";
+@import "cardservicio.scss";
+@import "cardproductos.scss";
+@import "titulo.scss";
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: large;
+    text-align: justify;
+    padding: 5px 20px 5px 20px;
+}
+
+.lista li {
+    margin-right: 20px;
+    font-size: large;
+    text-align: justify;
+
+}
+
+.imagenes {
+    display: block;
+    margin: auto;
+    width: 345px;
+    height: 300px;
+}
+
+
+
+/* footer y icono de whatsapp*/
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 30px;
+    /* Puedes ajustar este valor según sea necesario */
+    height: auto;
+    border-radius: 50%;
+    /* Esto hace que la imagen sea circular */
+}
+

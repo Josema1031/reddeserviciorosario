@@ -1,237 +1,205 @@
-body{
-  background-color: cadetblue;
-    margin: 0;
-    padding: 0;
-}
+@charset "UTF-8";
 header {
-    background-color: black;
-    color: red;
-    padding: 10px 0;
-    border-bottom: 2px solid white;
-    margin:2px;
-    padding: 1px;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .menu li {
-    position: relative;
-    margin: 0 2px;
-  }
-  
-  .menu a {
-   
-    color: red;
-    font-size: 15px;
-    margin: 5px;
-    text-decoration: none;
-    font-weight: bolder;
-  }
-  
-  .menu li:hover .submenu {
-    display: block;
-  }
-  
-  a:hover {
-    color: white;
-  }
-  
-  .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color:black;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .submenu li {
-    margin: 0;
-  }
-  
-  .submenu a {
-    font-size: small;
-    padding: 1px;
-    display: block;
-  }
+  background-image: linear-gradient(to left, #017F2A, #A9D300);
+  color: white;
+  padding: 10px 0;
+  border-bottom: 2px solid white;
+  margin: 2px;
+  margin-bottom: 10px;
+  padding: 1px;
+}
 
-  .titulo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.3rem;
-    font-weight: bolder;
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 2px;
-  }
+nav {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
 
-  h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    font-weight: bolder;
-    text-decoration: underline;
-    text-align: center;
-    margin-top: 10px;
-    padding-top: 2px;
-  }
-  p {
-    font-size: large;
-    text-align: justify;
-    padding: 5px 20px 5px 20px;
-  }
-  .titulo3 {
-    font-size: large;
-    text-align: justify;
-    padding: 5px 20px 5px 20px;
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 
-  }
-  .lista li {
-    font-size: large;
-    text-align: justify;
-    
-  }
+.menu li {
+  position: relative;
+  margin: 0 2px;
+}
 
-  .imagenes {display: block;
-    margin: auto;
-    width: 450px;
-    height: 300px;
-  }
-  
+.menu a {
+  color: white;
+  font-size: 15px;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bolder;
+}
 
+.menu li:hover .submenu {
+  display: block;
+}
 
-  /* footer y icono de whatsapp*/
-  .whatsapp-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-  }
-  
-  .whatsapp-icon img {
-    width: 50px; /* Puedes ajustar este valor según sea necesario */
-    height: auto;
-    border-radius: 50%; /* Esto hace que la imagen sea circular */
-  }
-  
-  footer p {
-    background-color: black;
-    color: white;    
-    font-size: smaller;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    text-decoration: underline;
-    padding: 20px;
-    font-weight: bold;
-    padding-bottom: 30px;
-    margin-bottom: 0;
-  }
+a:hover {
+  color: yellow;
+}
 
-  /* Card pagina Principal*/
-  
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 5px; /* Añade un espacio entre las tarjetas */
-    margin-bottom: 20px;
+.submenu {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  left: 10px;
+  background-image: linear-gradient(to left, #017F2A, #A9D300);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  }
+.submenu li {
+  margin: 0;
+}
 
-  .card {
-    width: 200px;
-    padding: 20px;
-    margin: 20px;
-    border: 7px solid #ddd;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: move 5s infinite alternate, fade 2s infinite alternate;
-  }
-  
-  .card img {
-    border-radius: 20px;
-    max-width: 100%;
-    height: 150px;
-  }
-  
-  .card-body {
-    padding: 10px 60px 10px 60px;
-  }
-  
-  .card-title {
-    color: black;
-    text-decoration: underline;
-    font-weight: bold;
-    text-align: center;
-    font-size: 15px;
-    margin: 0;
-  }
-  
-  .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin-top: 25px;
-    font-size: 16px;
-    border-radius: 100px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-  }
-  
-  /*animacion en las card*/
+.submenu a {
+  font-size: small;
+  padding: 1px;
+  display: block;
+}
 
-@keyframes move {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(30px);
-            }
-        }
+/* footer y icono de whatsapp*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
 
-        @keyframes fade {
-            0% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0.8;
-            }
-        }
+.whatsapp-icon img {
+  width: 50px; /* Puedes ajustar este valor según sea necesario */
+  height: auto;
+  border-radius: 50%; /* Esto hace que la imagen sea circular */
+}
 
+footer {
+  background-image: linear-gradient(to left, #017F2A, #A9D300);
+  color: #fff;
+  text-align: center;
+  padding: 0px 5px;
+}
 
-/* CARD DEL CONTENEDOR DE LA SECCION NOSOTROS*/
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer li {
+  font-size: 12px;
+  margin: 5px 0;
+  text-align: justify;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer P {
+  font-size: 1rem;
+  text-align: justify;
+  color: black;
+  font-weight: bolder;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.copy {
+  text-align: center;
+}
+
+/* Card servicios*/
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px; /* Añade un espacio entre las tarjetas */
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  margin: 20px;
+  border: 3px solid green;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: move 5s infinite alternate, fade 2s infinite alternate;
+}
+
+.card img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: 150px;
+}
+
+.card-body {
+  padding: 10px 60px 10px 60px;
+}
+
+.card-title {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+  font-size: 15px;
+  margin: 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(to left, #017F2A, #A9D300);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/*animacion en las card*/
+.card {
+  transition: transform 4.2s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(360deg);
+}
+
+/* CARD DEL CONTENEDOR DE LA SECCION PRODUCTOS*/
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
 }
 
 .card-nosotros {
-  background-color: white;  
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   margin: 20px;
@@ -276,5 +244,79 @@ header {
   background-color: #2980b9;
 }
 
+/*animacion en las card*/
+.card-nosotros {
+  transition: transform 4.2s ease;
+  transform-style: preserve-3d;
+}
 
+.card-nosotros:hover {
+  transform: rotateY(360deg);
+}
 
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 2px;
+}
+
+.titulo3 {
+  font-size: large;
+  text-align: justify;
+  padding: 5px 20px 5px 20px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 2px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: large;
+  text-align: justify;
+  padding: 5px 20px 5px 20px;
+}
+
+.lista li {
+  margin-right: 20px;
+  font-size: large;
+  text-align: justify;
+}
+
+.imagenes {
+  display: block;
+  margin: auto;
+  width: 345px;
+  height: 300px;
+}
+
+/* footer y icono de whatsapp*/
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp-icon img {
+  width: 30px;
+  /* Puedes ajustar este valor según sea necesario */
+  height: auto;
+  border-radius: 50%;
+  /* Esto hace que la imagen sea circular */
+}
+
+/*# sourceMappingURL=style.css.map */
