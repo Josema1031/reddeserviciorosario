@@ -12,7 +12,24 @@
     margin: 20px;
     width: 300px;
     overflow: hidden;
+    animation: move 10s infinite alternate;
   }
+  
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+    opacity: 0.5;
+}
+50% {
+    transform: translateX(-30px);
+    opacity: 1;
+}
+100% {
+    transform: translateX(0);
+    opacity: 0.6;
+}
+}
   
   .card-nosotros img {
     height: 200px;

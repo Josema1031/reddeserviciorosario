@@ -1,0 +1,42 @@
+/** esto es el codigo de la introduccion**/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.grid-item {
+    margin-top: 10px;
+    color: black;
+    padding: 0px;
+    text-align: justify;
+    border-radius: 1000px;
+
+}
+
+.grid-item {
+    padding: 10px;  
+}
+
+.grid-item1 {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+
+.grid-item2 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+
+.grid-item3 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.grid-item4 {
+    grid-column: span 7;
+    grid-row: span 1;
+}

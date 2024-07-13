@@ -3,25 +3,25 @@
 @import "cardservicio.scss";
 @import "cardproductos.scss";
 @import "titulo.scss";
-
+@import "mediaquery.scss";
+@import "grid.scss";
 
 
 body {
     margin: 0;
-    padding: 0;
+
+
 }
 
 p {
-    font-size: large;
+    font-size: 13px;
     text-align: justify;
-    padding: 5px 20px 5px 20px;
+
 }
 
-.lista li {
-    margin-right: 20px;
-    font-size: large;
+li {
+    font-size: 13px;
     text-align: justify;
-
 }
 
 .imagenes {
@@ -29,11 +29,10 @@ p {
     margin: auto;
     width: 345px;
     height: 300px;
+
 }
 
-
-
-/* footer y icono de whatsapp*/
+/*  icono de whatsapp*/
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
@@ -49,3 +48,6 @@ p {
     /* Esto hace que la imagen sea circular */
 }
 
+.contactanos {
+    font-weight: bolder;
+}
