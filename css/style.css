@@ -433,6 +433,13 @@ body {
   margin: 0;
 }
 
+.imagenes {
+  display: block;
+  margin: auto;
+  width: 420px;
+  height: 300px;
+}
+
 p {
   font-size: 13px;
   text-align: justify;
@@ -443,11 +450,9 @@ li {
   text-align: justify;
 }
 
-.imagenes {
-  display: block;
-  margin: auto;
-  width: 345px;
-  height: 300px;
+.supermercado {
+  width: 290px;
+  height: 50px;
 }
 
 /*  icono de whatsapp*/
